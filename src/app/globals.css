@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+    font-family: "Slowdex";
+    src:  url("/fonts/Slowdex.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Sugo Pro";
+    src:  url("/fonts/Sugo-Pro-Classic-Bold-trial.ttf") format("ttf");
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
