@@ -17,8 +17,8 @@ const config: Config = {
             regular: '#166ba1',
             dark: '#112c4a',
         },
-        black: '#00000',
-        white: '#fffff',
+        black: '#000000',
+        white: '#ffffff',
         gray: '#d9d9d9'
     },
     extend: {
