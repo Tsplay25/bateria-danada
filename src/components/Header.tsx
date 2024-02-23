@@ -12,9 +12,10 @@ export default function Header() {
     return (
         <>
             <header className="flex bg-blue-dark px-5 py-3 justify-between">
+                {/* logos */}
                 <div className="flex mb-1">
-                    <img className="md:h-16" src="/img/header/logo-coelhoBD.svg" alt="" />
-                    <img className="hidden md:block" src="/img/header/logo-escrita.svg" alt="" />
+                    <img className="md:h-16" src="/img/header/logo-coelhoBD.svg" alt="logotipo bateria danada branca com um coelho e a sigla B.D de fundo" />
+                    <img className="hidden md:block" src="/img/header/logo-escrita.svg" alt="logotipo bateria danada escrito por extenso" />
                 </div>
 
                 {/* desktop navbar */}
@@ -22,36 +23,24 @@ export default function Header() {
                     <ul className="hidden lg:flex items-center text-white bg-blue-dark text-[32px] gap-8 font-sugo antialiased h-full">
                         <li className="group flex justify-center items-center relative z-10">
                             <a className="block z-20 text-center absolute" href="#hero">Home</a>
-                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg" alt="" />
+                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg"/>
                         </li>
                         <li className="group flex justify-center items-center relative z-10">
                             <a className="block z-20 text-center absolute" href="#vertentes">Vertentes</a>
-                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg" alt="" />
+                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg"/>
                         </li>
                         <li className="group flex justify-center items-center relative z-10">
                             <a className="block z-20 text-center absolute" href="#social">Social</a>
-                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg" alt="" />
+                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg"/>
                         </li>
                         <li className="group flex justify-center items-center relative z-10">
                             <a className="block z-20 text-center absolute" href="#fotos">Fotos</a>
-                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg" alt="" />
+                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg"/>
                         </li>
                         <li className="group flex justify-center items-center relative z-10 whitespace-nowrap">
                             <a className="block z-20 text-center absolute" href="#contato">Contate-nos</a>
-                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg" alt="" />
+                            <img className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24" src="/img/header/bg-nav-hover.svg"/>
                         </li>
-                        {/* <li className="">
-                            <a href="#vertentes">Vertentes</a>
-                        </li>
-                        <li className="">
-                            <a href="#social">Social</a>
-                        </li>
-                        <li className="">
-                        <a href="#fotos">Fotos</a>
-                    </li>
-                        <li className="whitespace-nowrap">
-                            <a className="flex justify-center" href="#contato">Contate-nos</a>
-                        </li> */}
                     </ul>
                 </nav>
 
