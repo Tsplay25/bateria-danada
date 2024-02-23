@@ -30,6 +30,9 @@ const config: Config = {
       fontFamily: {
         'slowdex': ['Slowdex'],
         'sugo': ['Sugo Pro']
+      },
+      transitionProperty: {
+        'height': 'height',
       }
     },
   },
