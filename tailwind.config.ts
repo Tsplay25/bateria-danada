@@ -7,6 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+        'md': '480px',
+        'lg' : '1140px',
+    },
     colors: {
         purple: {
             light: '#7429e7',
@@ -26,6 +30,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "nav-hover" : "url('/img/header/bg-nav-hover.svg')"
       },
       fontFamily: {
         'slowdex': ['Slowdex'],
