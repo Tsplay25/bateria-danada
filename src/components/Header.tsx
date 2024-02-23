@@ -7,8 +7,6 @@ export default function Header() {
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
-        console.log(showMenu);
-        
     };
 
     return (
@@ -21,16 +19,22 @@ export default function Header() {
                 </button>
             </header>
             {/* dropdown menu */}
-            {showMenu && (
-                <div>
-                    <ul className="flex flex-col items-center text-white bg-blue-dark text-2xl font-sugo antialiased">
-                        <li className="py-1.5">Home</li>
-                        <li className="py-1.5">Social</li>
-                        <li className="py-1.5">Vertentes</li>
-                        <li className="py-1.5">Contate-nos</li>
-                    </ul>
-                </div>
-            )}
+            <div className={`${showMenu ? "max-h-48" : "max-h-0 invisible"} transition-all duration-500 ease-in-out overflow-hidden`}>
+                <ul className="flex flex-col items-center text-white bg-blue-dark text-2xl font-sugo antialiased">
+                    <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
+                        <a className="flex justify-center" href="#hero">Home</a>
+                    </li>
+                    <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
+                        <a className="flex justify-center" href="#vertentes">Vertentes</a>
+                    </li>
+                    <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
+                        <a className="flex justify-center" href="#social">Social</a>
+                    </li>
+                    <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
+                        <a className="flex justify-center" href="#contato">Contate-nos</a>
+                    </li>
+                </ul>
+            </div>
         </>
     )
 };
