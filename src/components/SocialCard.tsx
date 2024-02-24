@@ -19,7 +19,13 @@ const SocialCard = ({ title, carouselImgs, content }: IProps) => {
         {/* Carousel */}
         <div className="bg-blue-light">{carouselImgs}</div>
 
-        <div className="bg-sambanada-logo bg-no-repeat bg-contain bg-center">
+        <div
+          className={
+            title === "Sambanada"
+              ? "bg-sambanada-logo bg-no-repeat bg-contain bg-center"
+              : "bg-dnd-de-lata-logo bg-no-repeat bg-contain bg-center"
+          }
+        >
           <p className="text-blue-dark font-sugo text-xl text-center leading-5">
             {content}
           </p>
