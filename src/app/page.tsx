@@ -1,3 +1,6 @@
+import SocialCard from "@/components/SocialCard";
+import { Content } from "next/font/google";
+
 export default function Home() {
   return (
     <>
@@ -69,41 +72,20 @@ export default function Home() {
           </h2>
 
           <div className="flex flex-col md:flex-row items-center justify-between w-full gap-14">
-            <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
-              <h3 className="text-blue-dark font-sugo text-3xl text-center w-full">
-                Sambanada
-              </h3>
+            <SocialCard
+              title="Sambanada"
+              carouselImgs={["."]}
+              content="Evento que nasceu com o propósito de reunir amantes do samba, e que transcende barreiras e une pessoas em torno de uma paixão comum: a música brasileira. Proporcionando momentos de alegria, descontração e muita dança. "
+            />
 
-              {/* Carousel */}
-              <div className="bg-blue-light">.</div>
-
-              <div className="bg-sambanada-logo bg-no-repeat bg-contain bg-center">
-                <p className="text-blue-dark font-sugo text-xl text-center leading-5">
-                  Evento que nasceu com o propósito de reunir amantes do samba,
-                  e que transcende barreiras e une pessoas em torno de uma
-                  paixão comum: a música brasileira. Proporcionando momentos de
-                  alegria, descontração e muita dança.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
-              <h3 className="text-blue-dark font-sugo text-3xl text-center w-full">
-                Danada de Lata
-              </h3>
-
-              {/* Carousel */}
-              <div className="bg-blue-light">.</div>
-
-              <div className="bg-dnd-de-lata-logo bg-no-repeat bg-contain bg-center">
-                <p className="text-blue-dark font-sugo text-xl text-center leading-5">
-                  Fundado no ano de 2013 fazendo parte de sua vertente social,
-                  que visa o impacto ambiental e social, além de ser totalmente
-                  sem fins lucrativos e com público atingido de aproximadamente
-                  50 crianças por edição.
-                </p>
-              </div>
-            </div>
+            <SocialCard
+              title="Danada de Lata"
+              carouselImgs={["."]}
+              content="Fundado no ano de 2013 fazendo parte de sua vertente social,
+              que visa o impacto ambiental e social, além de ser totalmente
+              sem fins lucrativos e com público atingido de aproximadamente
+              50 crianças por edição."
+            />
           </div>
         </div>
       </section>
