@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      {/* hero section */}
+      {/* hero  */}
       <section className="flex items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16">
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
@@ -59,6 +59,11 @@ export default function Home() {
             </picture>
           </div>
         </div>
+      </section>
+
+      {/* Events and Social */}
+      <section className="flex items-center justify-center bg-events-social bg-cover bg-no-repeat h-[700px] max-w-full text-white">
+        <div className="flex items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover h-[700px] max-w-full mx-auto py-16"></div>
       </section>
     </>
   );

@@ -32,6 +32,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "nav-hover": "url('/img/header/bg-nav-hover.svg')",
         "hero-pattern": "url('/img/hero/bg-hero.png')",
+        "events-social": "url('/img/events-social/bg-events-social.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
