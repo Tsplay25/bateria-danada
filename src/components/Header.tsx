@@ -29,7 +29,7 @@ export default function Header() {
 
           {/* desktop navbar */}
           <nav className="flex items-center pr-10">
-            <ul className="hidden lg:flex items-center text-white bg-blue-dark text-[32px] gap-8 font-sugo antialiased h-full">
+            <ul className="hidden xl:flex items-center text-white bg-blue-dark text-[32px] gap-8 font-sugo antialiased h-full">
               <li className="group flex justify-center items-center relative z-10">
                 <a className="block z-20 text-center absolute" href="#hero">
                   Home
@@ -84,7 +84,7 @@ export default function Header() {
           {/* mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="focus:outline-none focus:scale-110 transition-all lg:hidden"
+            className="focus:outline-none focus:scale-110 transition-all xl:hidden"
           >
             <img
               className="hover:scale-110 transition-all"

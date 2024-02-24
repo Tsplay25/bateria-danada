@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     screens: {
       md: "480px",
-      lg: "1140px",
+      mdlg: "760px",
+      lg: "1024px",
+      xl: "1140px",
     },
     colors: {
       purple: {
