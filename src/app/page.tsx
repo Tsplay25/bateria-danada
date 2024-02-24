@@ -3,7 +3,7 @@ export default function Home() {
     <>
       {/* hero section */}
       <section className="flex items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
             <h1 className="text-blue-light font-edo text-5xl w-full">
               Bateria Danada Unifei
@@ -44,20 +44,18 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="flex flex-col justify-center absolute md:static">
-            <picture>
+          <div className="flex flex-col items-center justify-center max-w-[768px]">
+            <picture className="w-full">
               <img
-                className="h-full opacity-60 overflow-hidden relative z-0"
+                className="opacity-80 items-center justify-center z-0 md:hidden max-h-[768px]"
                 src="/img/hero/coelhao.png"
-                alt=""
+                alt="Coelhão Azul da Bateria Danada Unifei com óculos escuros e segurando um surdo de marcação na mão esquerda, e uma baqueta na mão direita"
               />
-              <picture>
-                <img
-                  className="hidden md:block"
-                  src="/img/hero/uh-que-azar.png"
-                  alt="Mancha de tinta roxa com o escrito UUHHH QUE AZAR!! no meio"
-                />
-              </picture>
+              <img
+                className="hidden w-auto items-center justify-center md:block"
+                src="/img/hero/hero-img.png"
+                alt="Coelhão Azul da Bateria Danada Unifei com óculos escuros e segurando um surdo de marcação na mão esquerda, e uma baqueta na mão direita além da mancha de tinta roxa com o escrito UUHHH QUE AZAR!! no meio"
+              />
             </picture>
           </div>
         </div>
