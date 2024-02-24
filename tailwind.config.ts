@@ -40,6 +40,7 @@ const config: Config = {
         slowdex: ["Slowdex"],
         sugo: ["Sugo Pro"],
         edo: ["Edo SZ"],
+        roboto: ["Roboto Condensed"],
       },
       transitionProperty: {
         height: "height",

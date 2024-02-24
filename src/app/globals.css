@@ -11,6 +11,11 @@
   src: url("/fonts/Sugo-Pro-Classic-Regular-trial.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("/fonts/RobotoCondensed-Medium.ttf") format("truetype");
+}
+
 @tailwind utilities;
 
 @layer utilities {

@@ -12,7 +12,7 @@ const SocialCard = ({ title, carouselImgs, content }: IProps) => {
   return (
     <>
       <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
-        <h3 className="text-blue-dark font-sugo text-3xl text-center w-full">
+        <h3 className="text-blue-dark font-roboto text-3xl font-bold text-center w-full">
           {title}
         </h3>
 
@@ -26,7 +26,7 @@ const SocialCard = ({ title, carouselImgs, content }: IProps) => {
               : "bg-dnd-de-lata-logo bg-no-repeat bg-contain bg-center"
           }
         >
-          <p className="text-blue-dark font-sugo text-xl text-center leading-5">
+          <p className="text-blue-dark font-roboto text-xl text-center leading-5">
             {content}
           </p>
         </div>
