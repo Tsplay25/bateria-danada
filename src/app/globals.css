@@ -2,13 +2,13 @@
 @tailwind components;
 
 @font-face {
-    font-family: "Slowdex";
-    src:  url("/fonts/Slowdex.ttf") format("truetype");
+  font-family: "Slowdex";
+  src: url("/fonts/Slowdex.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Sugo Pro";
-    src:  url("/fonts/Sugo-Pro-Classic-Regular-trial.ttf") format("truetype");
+  font-family: "Sugo Pro";
+  src: url("/fonts/Sugo-Pro-Classic-Regular-trial.ttf") format("truetype");
 }
 
 @tailwind utilities;
