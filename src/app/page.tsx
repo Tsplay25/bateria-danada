@@ -63,12 +63,12 @@ export default function Home() {
 
       {/* Events and Social */}
       <section className="flex items-center justify-center bg-events-social bg-cover bg-no-repeat h-[700px] max-w-full text-white">
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover h-[700px] max-w-full py-16 gap-5">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover h-[700px] max-w-full py-16 px-4 gap-5">
           <h2 className="font-sugo text-5xl w-full text-center">
             Eventos e Social
           </h2>
 
-          <div className="flex flex-col items-center justify-between w-full gap-14">
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-14">
             <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
               <h3 className="text-blue-dark font-sugo text-3xl text-center w-full">
                 Sambanada
@@ -85,7 +85,21 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white/70">CARD 2</div>
+            <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
+              <h3 className="text-blue-dark font-sugo text-3xl text-center w-full">
+                Danada de Lata
+              </h3>
+
+              {/* Carousel */}
+              <div className="bg-blue-light">.</div>
+
+              <p className="text-blue-dark font-sugo text-xl text-center leading-5">
+                Fundado no ano de 2013 fazendo parte de sua vertente social, que
+                visa o impacto ambiental e social, além de ser totalmente sem
+                fins lucrativos e com público atingido de aproximadamente 50
+                crianças por edição.
+              </p>
+            </div>
           </div>
         </div>
       </section>
