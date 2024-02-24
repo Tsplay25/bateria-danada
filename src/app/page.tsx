@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <section className="flex items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16">
+      <section className="flex items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
             <h1 className="text-blue-light font-edo text-5xl w-full">
