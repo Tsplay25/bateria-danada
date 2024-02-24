@@ -77,12 +77,14 @@ export default function Home() {
               {/* Carousel */}
               <div className="bg-blue-light">.</div>
 
-              <p className="text-blue-dark font-sugo text-xl text-center leading-5">
-                Evento que nasceu com o propósito de reunir amantes do samba, e
-                que transcende barreiras e une pessoas em torno de uma paixão
-                comum: a música brasileira. Proporcionando momentos de alegria,
-                descontração e muita dança.
-              </p>
+              <div className="bg-sambanada-logo bg-no-repeat bg-contain bg-center">
+                <p className="text-blue-dark font-sugo text-xl text-center leading-5">
+                  Evento que nasceu com o propósito de reunir amantes do samba,
+                  e que transcende barreiras e une pessoas em torno de uma
+                  paixão comum: a música brasileira. Proporcionando momentos de
+                  alegria, descontração e muita dança.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col gap-4 bg-white/70 rounded-3xl p-4">
@@ -93,12 +95,14 @@ export default function Home() {
               {/* Carousel */}
               <div className="bg-blue-light">.</div>
 
-              <p className="text-blue-dark font-sugo text-xl text-center leading-5">
-                Fundado no ano de 2013 fazendo parte de sua vertente social, que
-                visa o impacto ambiental e social, além de ser totalmente sem
-                fins lucrativos e com público atingido de aproximadamente 50
-                crianças por edição.
-              </p>
+              <div className="bg-dnd-de-lata-logo bg-no-repeat bg-contain bg-center">
+                <p className="text-blue-dark font-sugo text-xl text-center leading-5">
+                  Fundado no ano de 2013 fazendo parte de sua vertente social,
+                  que visa o impacto ambiental e social, além de ser totalmente
+                  sem fins lucrativos e com público atingido de aproximadamente
+                  50 crianças por edição.
+                </p>
+              </div>
             </div>
           </div>
         </div>

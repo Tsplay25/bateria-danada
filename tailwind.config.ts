@@ -33,6 +33,8 @@ const config: Config = {
         "nav-hover": "url('/img/header/bg-nav-hover.svg')",
         "hero-pattern": "url('/img/hero/bg-hero.png')",
         "events-social": "url('/img/events-social/bg-events-social.png')",
+        "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
+        "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
