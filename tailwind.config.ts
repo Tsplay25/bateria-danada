@@ -34,11 +34,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "nav-hover": "url('/img/header/bg-nav-hover.svg')",
         "hero-pattern": "url('/img/hero/bg-hero.png')",
+        "events-social": "url('/img/events-social/bg-events-social.png')",
+        "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
+        "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
         sugo: ["Sugo Pro"],
         edo: ["Edo SZ"],
+        roboto: ["Roboto Condensed"],
       },
       transitionProperty: {
         height: "height",
