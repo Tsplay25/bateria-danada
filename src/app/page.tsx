@@ -71,7 +71,7 @@ export default function Home() {
             Eventos e Social
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center justify-center w-full gap-20">
+          <div className="flex flex-col mdlg:flex-row items-center justify-center w-full gap-20">
             <SocialCard
               title="Sambanada"
               carouselImgs={[
