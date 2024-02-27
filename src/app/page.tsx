@@ -103,31 +103,42 @@ export default function Home() {
       </section>
 
       {/* Contact form */}
-      <section>
+      <section className="bg-drums font-sugo">
         <div>
-          <h2 className="font-sugo text-5xl w-full text-center  text-white">
+          <h2 className="text-5xl w-full text-center text-white">
             Entre em Contato!
           </h2>
           
           {/* Form */}
-          <div>
-            <form>
+          <div className="max-w-[280px] bg-white rounded-[20px] py-6 px-6 mx-auto">
+            <form className="flex flex-col gap-3">
               {/* Name */}
-              <label htmlFor="name">Nome:</label>
-              <input type="text" id="name" placeholder="Digite seu nome..." />
+              <div className="flex flex-col gap-1.5">
+                  <label htmlFor="name">Nome:</label>
+                  <input className="bg-gray rounded-[20px] px-2 py-1" type="text" id="name" placeholder="Digite seu nome..." />
+              </div>
 
               {/* Phone */}
-              <label htmlFor="phone">Telefone:</label>
-              <input type="tel" id="phone" autoComplete="tel" />
+              <div className="flex flex-col gap-1.5">
+                  <label htmlFor="phone">Telefone:</label>
+                  <input className="bg-gray rounded-[20px] px-2 py-1" type="tel" id="phone" autoComplete="tel" placeholder="(XX) XXXXX-XXXX"/>
+              </div>
 
               {/* Email */}
-              <label htmlFor="email">Nome:</label>
-              <input type="text" id="email" placeholder="Digite seu email..." />
+              <div className="flex flex-col gap-1.5">
+                  <label htmlFor="email">Nome:</label>
+                  <input className="bg-gray rounded-[20px] px-2 py-1" type="text" id="email" placeholder="Digite seu email..." />
+              </div>
               
               {/* Message */}
-              <label htmlFor="message">Mensagem:</label>
-              <textarea id="message" placeholder="Como podemos ajudar?" cols={30} rows={10}></textarea>
+              <div className="flex flex-col gap-1.5">
+                  <label htmlFor="message">Mensagem:</label>
+                  <textarea className="bg-gray rounded-[20px] px-2 py-1" id="message" placeholder="Como podemos ajudar?" cols={30} rows={10}></textarea>
+              </div>
 
+              <button className="self-center rounded-lg w-3/6 text-white bg-blue-dark px=9 py-2.5 text-[24px]">
+                Enviar
+              </button>
             </form>
           </div>
         </div>
