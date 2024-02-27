@@ -101,6 +101,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Contact form */}
+      <section>
+              
+      </section>  
     </>
   );
 }
