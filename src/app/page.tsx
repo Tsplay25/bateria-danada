@@ -104,7 +104,33 @@ export default function Home() {
 
       {/* Contact form */}
       <section>
+        <div>
+          <h2 className="font-sugo text-5xl w-full text-center  text-white">
+            Entre em Contato!
+          </h2>
+          
+          {/* Form */}
+          <div>
+            <form>
+              {/* Name */}
+              <label htmlFor="name">Nome:</label>
+              <input type="text" id="name" placeholder="Digite seu nome..." />
+
+              {/* Phone */}
+              <label htmlFor="phone">Telefone:</label>
+              <input type="tel" id="phone" autoComplete="tel" />
+
+              {/* Email */}
+              <label htmlFor="email">Nome:</label>
+              <input type="text" id="email" placeholder="Digite seu email..." />
               
+              {/* Message */}
+              <label htmlFor="message">Mensagem:</label>
+              <textarea id="message" placeholder="Como podemos ajudar?" cols={30} rows={10}></textarea>
+
+            </form>
+          </div>
+        </div>
       </section>  
     </>
   );

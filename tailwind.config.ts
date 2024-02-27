@@ -37,6 +37,7 @@ const config: Config = {
         "events-social": "url('/img/events-social/bg-events-social.png')",
         "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
         "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
+        "drums": "url(/img/contact/bg-drums.png)",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
