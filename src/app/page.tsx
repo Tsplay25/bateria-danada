@@ -120,33 +120,33 @@ export default function Home() {
             
             {/* Form */}
             <div className="max-w-[760px] mx-5 bg-white rounded-[20px] py-6 px-6 z-10 my-8 flex-1">
-              <form className="flex flex-col gap-3 relative">
+              <form className="flex flex-col gap-3 relative ">
                 <img className="absolute z-10 -top-14 -right-20" src="/img/contact/splash-ink.svg" alt="" />
                 {/* Name */}
                 <div className="flex flex-col gap-1.5 z-30">
-                    <label htmlFor="name">Nome:</label>
-                    <input className="font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="text" id="name" placeholder="Digite seu nome..." />
+                    <label className="text-blue-dark md:text-[28px]" htmlFor="name">Nome:</label>
+                    <input className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="text" id="name" placeholder="Digite seu nome..." />
                 </div>
   
                 {/* Phone */}
                 <div className="flex flex-col gap-1.5 z-30">
-                    <label htmlFor="phone">Telefone:</label>
-                    <input className="font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="tel" id="phone" autoComplete="tel" placeholder="(XX) XXXXX-XXXX"/>
+                    <label className="text-blue-dark md:text-[28px]" htmlFor="phone">Telefone:</label>
+                    <input className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="tel" id="phone" autoComplete="tel" placeholder="(XX) XXXXX-XXXX"/>
                 </div>
   
                 {/* Email */}
                 <div className="flex flex-col gap-1.5 z-30">
-                    <label htmlFor="email">Nome:</label>
-                    <input className="font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="text" id="email" placeholder="Digite seu email..." />
+                    <label className="text-blue-dark md:text-[28px]" htmlFor="email">Nome:</label>
+                    <input className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="text" id="email" placeholder="Digite seu email..." />
                 </div>
                 
                 {/* Message */}
                 <div className="flex flex-col gap-1.5 z-30">
-                    <label htmlFor="message">Mensagem:</label>
-                    <textarea className="font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" id="message" placeholder="Como podemos ajudar?" cols={30} rows={10}></textarea>
+                    <label className="text-blue-dark md:text-[28px]" htmlFor="message">Mensagem:</label>
+                    <textarea className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" id="message" placeholder="Como podemos ajudar?" cols={30} rows={10}></textarea>
                 </div>
   
-                <button className="self-center rounded-lg w-3/6 text-white bg-blue-dark px=9 py-2.5 text-[24px]">
+                <button className="self-center rounded-lg text-white bg-blue-dark w-3/6 my-4 py-2.5 text-[24px] hover:bg-purple-light hover:scale-105 transition-all">
                   Enviar
                 </button>
               </form>
