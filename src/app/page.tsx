@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <section className="flex items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
+      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
             <h1 className="text-blue-light font-edo text-5xl w-full">
@@ -62,6 +62,14 @@ export default function Home() {
             </picture>
           </div>
         </div>
+
+        <picture className="flex justify-center">
+          <img
+            className="mt-20 md:-mt-20 animate-bounce absolute"
+            src="/img/hero/seta-tinta.svg"
+            alt="Seta de tinta roxa"
+          />
+        </picture>
       </section>
 
       {/* Events and Social */}
