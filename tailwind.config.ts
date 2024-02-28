@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      sm: "320px",
+      smlg: "375px",
+      smxl: "425px",
       md: "480px",
       mdlg: "760px",
       lg: "1024px",
@@ -37,6 +40,7 @@ const config: Config = {
         "events-social": "url('/img/events-social/bg-events-social.png')",
         "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
         "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
+        "sobre-img": "url('/img/about/bg-about-img.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],

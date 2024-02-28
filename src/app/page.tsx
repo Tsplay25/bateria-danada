@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
+      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat bg-center h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
             <h1 className="text-blue-light font-edo text-5xl w-full">
@@ -65,17 +65,46 @@ export default function Home() {
 
         <picture className="flex justify-center">
           <img
-            className="mt-20 md:-mt-20 animate-bounce absolute"
+            className="mt-20 smlg:-mt-6 smxl:-mt-14 md:-mt-20 animate-bounce absolute"
             src="/img/hero/seta-tinta.svg"
             alt="Seta de tinta roxa"
           />
         </picture>
       </section>
 
+      {/* About */}
+      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white py-10 gap-6">
+        <h2 className="font-sugo mt-14 smlg:mt-0 text-5xl md:text-7xl w-full text-center">
+          Sobre nós
+        </h2>
+
+        <div className="flex flex-wrap items-center justify-center gap-4 mdlg:gap-14">
+          <div className="max-w-lg">
+            <picture>
+              <img
+                src="/img/about/about-img.png"
+                alt="Uma mancha de tinta roxa com a seguinte frase escrita por cima 'Conheça o barulho da nossa bateria!'"
+              />
+            </picture>
+          </div>
+          <div className="flex flex-col gap-4 bg-purple-regular rounded-3xl max-w-72 mdlg:max-w-96 items-center p-4 shadow-2xl">
+            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl  text-center">
+              Incentivando, relações amistosas entre os nossos membros, de
+              outras organizações estudantis e da comunidade local,
+              possibilitamos o desenvolvimento de habilidades comportamentais,
+              por meio da promoção de aulas de instrumentos de percussão,
+              ensaios de música no ritmo de samba e samba-enredo, além da
+              organização de eventos de cunho sociocultural relacionados à
+              música.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Events and Social */}
-      <section className="flex items-center justify-center bg-events-social bg-cover bg-no-repeat max-w-full">
+      <section className="flex items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full">
         <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover w-full py-16 px-4 gap-5">
-          <h2 className="font-sugo text-5xl w-full text-center  text-white">
+          <h2 className="font-sugo text-5xl md:text-7xl w-full text-center text-white mb-4">
             Eventos e Social
           </h2>
 
