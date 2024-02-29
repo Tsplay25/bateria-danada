@@ -3,25 +3,41 @@
 import SocialCard from "@/components/SocialCard";
 import PhoneMaskInput from "@/functions/PhoneMaskInput";
 import { useState } from "react";
-import { useForm, FormProvider } from "react-hook-form";
+import { useForm, FormProvider, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
+import axios from "axios";
 
 type FormData = {
+  id: number,
   name: string,
   phone: string,
   email: string,
-  message: string,
+  message?: string,
 }
 
 export default function Home() {
-  const methods = useForm<FormData>();
+  const methods = useForm<FormData>({ mode: "onBlur", });
   const [phone, setPhone] = useState('');
+
+  const errors = methods.formState.errors;
 
   const handlePhoneChange = (value: string) => {
     setPhone(value)
   }
 
-  const onSubmit = (data : FormData) => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async (data : FormData) => {
+    try {
+      const response = await axios.post(
+        'http://localhost:5173/create',
+        data
+    );
+
+    } catch (error) {
+      console.error('Erro ao enviar os dados:', error);
+    }
+  }
+
+  const onError: SubmitErrorHandler<FormData> = (errors) => {
+      console.log(errors);
   }
 
   return (
@@ -143,41 +159,52 @@ export default function Home() {
             {/* Form */}
             <div className="max-w-[760px] mx-5 bg-white rounded-[20px] py-6 px-6 z-10 my-8 flex-1">
               <FormProvider {...methods}>
-                <form onSubmit={methods.handleSubmit(onSubmit)} className="flex flex-col gap-3 relative ">
+                <form onSubmit={methods.handleSubmit(onSubmit, onError)} className="flex flex-col relative ">
                   <img className="absolute z-10 -top-14 -right-20" src="/img/contact/splash-ink.svg" alt="" />
                   {/* Name */}
-                  <div className="flex flex-col gap-1.5 z-30">
+                  <div className="flex flex-col z-30">
                       <label className="text-blue-dark md:text-[28px]" htmlFor="name">Nome:</label>
                       <input 
-                        {...methods.register("name")}
+                        {...methods.register("name", {required: "Você precisa digitar seu nome"})}
                         className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" 
                         type="text" 
                         id="name" 
                         placeholder="Digite seu nome..." 
                       />
+                      {errors?.name ?
+                        <span className="text-purple-regular">{errors.name.message}</span> :
+                        <span className="invisible">error span</span>
+                      }
                   </div>
     
                   {/* Phone */}
-                  <div className="flex flex-col gap-1.5 z-30">
+                  <div className="flex flex-col z-30">
                       <label className="text-blue-dark md:text-[28px]" htmlFor="phone">Telefone:</label>
                       <PhoneMaskInput  value={phone} onChange={handlePhoneChange}/>
-                      {/* <input className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" type="text" id="phone" autoComplete="tel" placeholder="(XX) XXXXX-XXXX" onChange={handlePhoneChange} value={phone}/> */}
+                      {errors?.phone ? 
+                        <span className="text-purple-regular">{errors.phone.message}</span> :
+                        <span className="invisible">error span</span>
+                      }
                   </div>
     
                   {/* Email */}
-                  <div className="flex flex-col gap-1.5 z-30">
+                  <div className="flex flex-col z-30">
                       <label className="text-blue-dark md:text-[28px]" htmlFor="email">Email:</label>
                       <input
-                        {...methods.register("email")} 
+                        {...methods.register("email", {required: "Você precisa digitar seu email"})} 
                         className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" 
                         type="text" 
                         id="email" 
                         placeholder="Digite seu email..." 
                       />
+                      {errors?.email ? 
+                        <span className="text-purple-regular">{errors.email.message}</span> : 
+                        <span className="invisible">error span</span>
+                      }
                   </div>
                   
                   {/* Message */}
-                  <div className="flex flex-col gap-1.5 z-30">
+                  <div className="flex flex-col z-30">
                       <label className="text-blue-dark md:text-[28px]" htmlFor="message">Mensagem:</label>
                       <textarea
                         {...methods.register("message")} 
@@ -189,7 +216,7 @@ export default function Home() {
                       />
                   </div>
     
-                  <button className="self-center rounded-lg text-white bg-blue-dark w-3/6 my-4 py-2.5 text-[24px] hover:bg-purple-light hover:scale-105 transition-all">
+                  <button type="submit" className="self-center rounded-lg text-white bg-blue-dark w-3/6 my-4 py-2.5 text-[24px] hover:bg-purple-light hover:scale-105 transition-all">
                     Enviar
                   </button>
                 </form>

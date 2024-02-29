@@ -17,7 +17,7 @@ export default function PhoneMaskInput({ value, onChange }: PhoneMaskProps) {
 
     return (
         <InputMask
-            {...register("phone")}
+            {...register("phone", {required: "Você precisa digitar seu telefone"})}
             mask="(99) 99999-9999"
             placeholder="(99) 99999-9999"
             maskChar="_"
