@@ -100,7 +100,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div>
           <picture>
             <img
               src="/img/strands/section-change.png"
@@ -111,48 +111,60 @@ export default function Home() {
       </section>
 
       {/* Strands */}
-      <section className="flex flex-col items-center justify-center bg-strands bg-cover bg-no-repeat bg-center text-white py-16 gap-6">
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="font-sugo text-center text-5xl lg:text-7xl">
-            Vertentes Musicais
-          </h2>
+      <section className="flex flex-col items-center justify-center bg-strands bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
+        <div className="py-16">
+          <div className="flex flex-col items-center justify-center">
+            <h2 className="font-sugo text-center text-5xl lg:text-7xl">
+              Vertentes Musicais
+            </h2>
+            <span className="font-sugo text-3xl">Conheça nossos ritmos!</span>
+          </div>
         </div>
       </section>
 
       {/* Events and Social */}
-      <section className="flex items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full">
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover w-full py-16 px-4 gap-5">
-          <h2 className="font-sugo text-5xl md:text-7xl w-full text-center text-white mb-4">
-            Eventos e Social
-          </h2>
-
-          <div className="flex flex-col mdlg:flex-row items-center justify-center w-full gap-20">
-            <SocialCard
-              title="Sambanada"
-              carouselImgs={[
-                "sambanada/1.jpg",
-                "sambanada/2.jpg",
-                "sambanada/3.jpg",
-                "sambanada/4.jpg",
-                "sambanada/5.jpg",
-              ]}
-              content="Evento que nasceu com o propósito de reunir amantes do samba, e que transcende barreiras e une pessoas em torno de uma paixão comum: a música brasileira. Proporcionando momentos de alegria, descontração e muita dança. "
-            />
-
-            <SocialCard
-              title="Danada de Lata"
-              carouselImgs={[
-                "dnd-de-lata/1.jpg",
-                "dnd-de-lata/2.jpg",
-                "dnd-de-lata/3.jpg",
-                "dnd-de-lata/4.jpg",
-                "dnd-de-lata/5.jpg",
-              ]}
-              content="Fundado no ano de 2013 fazendo parte de sua vertente social,
-              que visa o impacto ambiental e social, além de ser totalmente
-              sem fins lucrativos e com público atingido de aproximadamente
-              50 crianças por edição."
-            />
+      <section className="flex flex-col items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover">
+          <div>
+            <picture>
+              <img
+                className="rotate-180"
+                src="/img/strands/section-change.png"
+                alt="Mancha de tinta roxa"
+              />
+            </picture>
+          </div>
+          <div className=" w-full py-16 px-4 gap-5">
+            <h2 className="font-sugo text-5xl md:text-7xl w-full text-center text-white mb-4">
+              Eventos e Social
+            </h2>
+            <div className="flex flex-col mdlg:flex-row items-center justify-center w-full gap-20">
+              <SocialCard
+                title="Sambanada"
+                carouselImgs={[
+                  "sambanada/1.jpg",
+                  "sambanada/2.jpg",
+                  "sambanada/3.jpg",
+                  "sambanada/4.jpg",
+                  "sambanada/5.jpg",
+                ]}
+                content="Evento que nasceu com o propósito de reunir amantes do samba, e que transcende barreiras e une pessoas em torno de uma paixão comum: a música brasileira. Proporcionando momentos de alegria, descontração e muita dança. "
+              />
+              <SocialCard
+                title="Danada de Lata"
+                carouselImgs={[
+                  "dnd-de-lata/1.jpg",
+                  "dnd-de-lata/2.jpg",
+                  "dnd-de-lata/3.jpg",
+                  "dnd-de-lata/4.jpg",
+                  "dnd-de-lata/5.jpg",
+                ]}
+                content="Fundado no ano de 2013 fazendo parte de sua vertente social,
+                que visa o impacto ambiental e social, além de ser totalmente
+                sem fins lucrativos e com público atingido de aproximadamente
+                50 crianças por edição."
+              />
+            </div>
           </div>
         </div>
       </section>
