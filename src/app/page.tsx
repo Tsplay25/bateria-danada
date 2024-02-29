@@ -73,31 +73,49 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white py-10 gap-6">
-        <h2 className="font-sugo mt-14 smlg:mt-0 text-5xl md:text-7xl w-full text-center">
-          Sobre nós
-        </h2>
+      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white gap-6">
+        <div className="py-10">
+          <h2 className="font-sugo mt-14 smlg:mt-0 text-5xl md:text-7xl w-full text-center">
+            Sobre nós
+          </h2>
+          <div className="flex flex-wrap items-center justify-center gap-4 mdlg:gap-14">
+            <div className="max-w-lg">
+              <picture>
+                <img
+                  src="/img/about/about-img.png"
+                  alt="Uma mancha de tinta roxa com a seguinte frase escrita por cima 'Conheça o barulho da nossa bateria!'"
+                />
+              </picture>
+            </div>
+            <div className="flex flex-col gap-4 bg-purple-regular rounded-3xl max-w-72 mdlg:max-w-96 items-center p-4 shadow-2xl">
+              <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl  text-center">
+                Incentivando, relações amistosas entre os nossos membros, de
+                outras organizações estudantis e da comunidade local,
+                possibilitamos o desenvolvimento de habilidades comportamentais,
+                por meio da promoção de aulas de instrumentos de percussão,
+                ensaios de música no ritmo de samba e samba-enredo, além da
+                organização de eventos de cunho sociocultural relacionados à
+                música.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <picture>
+            <img
+              src="/img/strands/section-change.png"
+              alt="Mancha de tinta roxa"
+            />
+          </picture>
+        </div>
+      </section>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 mdlg:gap-14">
-          <div className="max-w-lg">
-            <picture>
-              <img
-                src="/img/about/about-img.png"
-                alt="Uma mancha de tinta roxa com a seguinte frase escrita por cima 'Conheça o barulho da nossa bateria!'"
-              />
-            </picture>
-          </div>
-          <div className="flex flex-col gap-4 bg-purple-regular rounded-3xl max-w-72 mdlg:max-w-96 items-center p-4 shadow-2xl">
-            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl  text-center">
-              Incentivando, relações amistosas entre os nossos membros, de
-              outras organizações estudantis e da comunidade local,
-              possibilitamos o desenvolvimento de habilidades comportamentais,
-              por meio da promoção de aulas de instrumentos de percussão,
-              ensaios de música no ritmo de samba e samba-enredo, além da
-              organização de eventos de cunho sociocultural relacionados à
-              música.
-            </p>
-          </div>
+      {/* Strands */}
+      <section className="flex flex-col items-center justify-center bg-strands bg-cover bg-no-repeat bg-center text-white py-16 gap-6">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="font-sugo text-center text-5xl lg:text-7xl">
+            Vertentes Musicais
+          </h2>
         </div>
       </section>
 
