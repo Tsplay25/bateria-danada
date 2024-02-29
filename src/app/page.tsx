@@ -2,20 +2,8 @@
 
 import SocialCard from "@/components/SocialCard";
 import { Content } from "next/font/google";
-import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 
 export default function Home() {
-  const strand = useRef<HTMLDivElement>(null);
-  const [strandWidth, setStrandWidth] = useState(0);
-
-  useEffect(() => {
-    setStrandWidth(
-      (strand.current?.scrollWidth as number) -
-        (strand.current?.offsetWidth as number)
-    );
-  }, []);
-
   return (
     <>
       {/* hero section */}
