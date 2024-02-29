@@ -1,7 +1,21 @@
+"use client";
+
 import SocialCard from "@/components/SocialCard";
 import { Content } from "next/font/google";
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const strand = useRef<HTMLDivElement>(null);
+  const [strandWidth, setStrandWidth] = useState(0);
+
+  useEffect(() => {
+    setStrandWidth(
+      (strand.current?.scrollWidth as number) -
+        (strand.current?.offsetWidth as number)
+    );
+  }, []);
+
   return (
     <>
       {/* hero section */}
@@ -73,8 +87,8 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white gap-6">
-        <div className="py-10">
+      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white">
+        <div className="flex flex-col py-10 gap-10">
           <h2 className="font-sugo mt-14 smlg:mt-0 text-5xl md:text-7xl w-full text-center">
             Sobre nós
           </h2>
@@ -111,13 +125,39 @@ export default function Home() {
       </section>
 
       {/* Strands */}
-      <section className="flex flex-col items-center justify-center bg-strands bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
-        <div className="py-16">
+      <section className="flex flex-col items-center justify-center bg-rabbits bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
+        <div className="flex flex-col items-center justify-center py-16 gap-10">
           <div className="flex flex-col items-center justify-center">
             <h2 className="font-sugo text-center text-5xl lg:text-7xl">
               Vertentes Musicais
             </h2>
-            <span className="font-sugo text-3xl">Conheça nossos ritmos!</span>
+            <span className="font-sugo text-3xl text-center">
+              Conheça nossos ritmos!
+            </span>
+          </div>
+
+          <div className="flex flex-col items-center justify-center bg-strand-ink bg-contain bg-center bg-no-repeat w-full h-[300px] sm:h-[400px] max-h-[600px]">
+            <div className="flex flex-col items-center justify-center gap-3 max-w-72 md:max-w-96">
+              <h3 className="font-sugo text-center text-2xl lg:text-3xl sm:-mt-10">
+                Escolinha e Jogos
+              </h3>
+              <div className="max-w-72 relative">
+                <picture>
+                  <img
+                    src="/img/strands/school.jpg"
+                    className="w-full rounded-xl"
+                    alt="Foto dos ritmistas da Bateria Danada Unifei tocando a vertente de escolinha em uma festa universitária."
+                  />
+                </picture>
+                <div className="absolute bottom-0 flex items-center justify-center w-full bg-gradient-to-b from-white/0 to-blue-regular/60 rounded-b-xl">
+                  <p className="font-sugo leading-4 text-center text-sm mdlg:text-xl mdlg:leading-4  p-4">
+                    Vertente de samba introdutória para o ensino de novos
+                    ritmistas, com o intuito de apresentação em eventos
+                    universitários e torcida em jogos
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

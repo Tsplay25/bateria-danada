@@ -41,7 +41,8 @@ const config: Config = {
         "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
         "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
         "sobre-img": "url('/img/about/bg-about-img.png')",
-        strands: "url('/img/strands/bg-strands.png')",
+        rabbits: "url('/img/strands/bg-strands.png')",
+        "strand-ink": "url('/img/strands/strand-ink.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
