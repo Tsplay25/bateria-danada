@@ -54,6 +54,10 @@ Este projeto foi desenvolvido com o objetivo de divulgar e aumentar o reconhecim
    # Executar o projeto
    $ npm run dev
 
+   # Iniciar servidor do Express
+   $ cd data
+   $ nodemon index.js
+
 ```
 
 <br>
