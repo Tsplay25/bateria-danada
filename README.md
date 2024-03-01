@@ -11,7 +11,7 @@
 
 </p>
 
-![Cover do Projeto](./readme-cover.png)
+![Capa do projeto](readme-cover.png)
 
 <br>
 
@@ -19,50 +19,20 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [TailwindCSS](https://tailwindcss.com/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [TypeScript](https://www.typescriptlang.org/)
 - [ReactJs](https://react.dev/)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [NextJs](https://nextjs.org/)
+- [Git](https://git-scm.com/) e [GitHub](https://github.com/)
 
 <br>
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido com o objetivo de divulgar e aumentar o reconhecimento e valor da bateria universitária da Universidade Federal de Itajubá, a {c:blue} Bateria Danada Unifei {/c}, além de disponibilizar o contato com o projeto para a contratação em eventos.
+Este projeto foi desenvolvido com o objetivo de divulgar e aumentar o reconhecimento e valor da bateria universitária da Universidade Federal de Itajubá, a <font bold color="blue"> **Bateria Danada Unifei**</font>, apresentando as divisões e vertentes que compõem o projeto, além de disponibilizar um meio de contato direto com o projeto para a sua contratação em eventos.
 
 <br>
 
 ![Gif da página do projeto](./readme-cover.gif)
-
-<br>
-
-### Seções
-
-#### Hero
-
----
-
-#### Sobre
-
----
-
-#### Vertentes musicais
-
----
-
-#### Eventos e Social
-
----
-
-#### Fotos
-
----
-
-#### Contato
 
 <br>
 
