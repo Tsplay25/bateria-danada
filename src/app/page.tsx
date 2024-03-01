@@ -60,11 +60,11 @@ export default function Home() {
               Bateria Danada Unifei
             </h1>
 
-            <p className="font-sugo leading-5 max-w-96 text-lg">
+            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl">
               A Bateria Danada Unifei carrega no peito o nome da Universidade
               Federal de Itajubá.
             </p>
-            <p className="font-sugo leading-5 max-w-96 text-lg">
+            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl">
               Há décadas tem encantado e animado a comunidade universitária,
               participando de eventos, torneios, shows e serviços para a
               comunidade de Itajubá. Representando o Sul de Minas Gerais
