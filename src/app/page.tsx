@@ -289,6 +289,7 @@ export default function Home() {
               />
             </div>
           </div>
+        <img className="rotate-180 w-full" src="/img/contact/blue-down-waves.svg" alt="" />
         </div>
       </section>
 
