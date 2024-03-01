@@ -50,7 +50,10 @@ export default function Home() {
   return (
     <>
       {/* hero section */}
-      <section className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat bg-center h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden">
+      <section
+        className="flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-no-repeat bg-center h-[700px] max-w-full text-white mx-auto py-16 overflow-hidden"
+        id="hero"
+      >
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
             <h1 className="text-blue-light font-edo text-5xl w-full">
@@ -118,7 +121,10 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white">
+      <section
+        className="flex flex-col items-center justify-center bg-sobre-img bg-cover bg-no-repeat bg-center bg-fixed text-white"
+        id="about"
+      >
         <div className="flex flex-col py-10 gap-10">
           <h2 className="font-sugo mt-14 smlg:mt-0 text-5xl md:text-7xl w-full text-center">
             Sobre nós
@@ -156,7 +162,10 @@ export default function Home() {
       </section>
 
       {/* Strands */}
-      <section className="flex items-center justify-center bg-strand-rabbits bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
+      <section
+        className="flex items-center justify-center bg-strand-rabbits bg-cover bg-center bg-no-repeat max-w-full text-white gap-6"
+        id="strands"
+      >
         <div className="flex flex-col items-center justify-center py-16">
           <div className="flex flex-col items-center justify-center">
             <h2 className="font-sugo text-center text-5xl lg:text-7xl">
@@ -248,7 +257,10 @@ export default function Home() {
       </section>
 
       {/* Events and Social */}
-      <section className="flex flex-col items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full">
+      <section
+        className="flex flex-col items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full"
+        id="social"
+      >
         <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover w-full">
           <div>
             <picture>
@@ -295,7 +307,7 @@ export default function Home() {
       </section>
 
       {/* Contact form */}
-      <section className="bg-drums font-sugo overflow-hidden">
+      <section className="bg-drums font-sugo overflow-hidden" id="contact">
         <img
           className="h-16 top-0 object-cover w-full"
           src="/img/contact/blue-down-waves.svg"

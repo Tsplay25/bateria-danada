@@ -40,10 +40,16 @@ export default function Header() {
                 />
               </li>
               <li className="group flex justify-center items-center relative z-10">
-                <a
-                  className="block z-20 text-center absolute"
-                  href="#vertentes"
-                >
+                <a className="block z-20 text-center absolute" href="#about">
+                  Sobre
+                </a>
+                <img
+                  className="z-10 opacity-0 group-hover:opacity-100 transition-all duration-200 w-24"
+                  src="/img/header/bg-nav-hover.svg"
+                />
+              </li>
+              <li className="group flex justify-center items-center relative z-10">
+                <a className="block z-20 text-center absolute" href="#strands">
                   Vertentes
                 </a>
                 <img
@@ -61,7 +67,7 @@ export default function Header() {
                 />
               </li>
               <li className="group flex justify-center items-center relative z-10">
-                <a className="block z-20 text-center absolute" href="#fotos">
+                <a className="block z-20 text-center absolute" href="#photos">
                   Fotos
                 </a>
                 <img
@@ -70,7 +76,7 @@ export default function Header() {
                 />
               </li>
               <li className="group flex justify-center items-center relative z-10 whitespace-nowrap">
-                <a className="block z-20 text-center absolute" href="#contato">
+                <a className="block z-20 text-center absolute" href="#contact">
                   Contate-nos
                 </a>
                 <img
@@ -108,7 +114,12 @@ export default function Header() {
             </a>
           </li>
           <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
-            <a className="flex justify-center" href="#vertentes">
+            <a className="flex justify-center" href="#about">
+              Sobre
+            </a>
+          </li>
+          <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
+            <a className="flex justify-center" href="#strands">
               Vertentes
             </a>
           </li>
@@ -118,12 +129,12 @@ export default function Header() {
             </a>
           </li>
           <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
-            <a className="flex justify-center" href="#fotos">
+            <a className="flex justify-center" href="#photos">
               Fotos
             </a>
           </li>
           <li className="py-1.5 hover:bg-blue-regular transition-all w-full">
-            <a className="flex justify-center" href="#contato">
+            <a className="flex justify-center" href="#contact">
               Contate-nos
             </a>
           </li>
