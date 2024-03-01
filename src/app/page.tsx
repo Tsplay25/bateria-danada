@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* Strands */}
-      <section className="flex items-center justify-center bg-rabbits bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
+      <section className="flex items-center justify-center bg-strand-rabbits bg-cover bg-center bg-no-repeat max-w-full text-white gap-6">
         <div className="flex flex-col items-center justify-center py-16">
           <div className="flex flex-col items-center justify-center">
             <h2 className="font-sugo text-center text-5xl lg:text-7xl">
@@ -204,11 +204,11 @@ export default function Home() {
 
       {/* Events and Social */}
       <section className="flex flex-col items-center justify-center bg-events-social bg-cover bg-center bg-no-repeat max-w-full">
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-purple-light/40 to-blue-regular/80 bg-cover w-full">
           <div>
             <picture>
               <img
-                className="rotate-180"
+                className="rotate-180 w-full"
                 src="/img/strands/section-change.png"
                 alt="Mancha de tinta roxa"
               />
