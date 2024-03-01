@@ -11,6 +11,8 @@
 
 </p>
 
+<br>
+
 ![Capa do projeto](readme-cover.png)
 
 <br>
@@ -36,7 +38,7 @@ Este projeto foi desenvolvido com o objetivo de divulgar e aumentar o reconhecim
 
 <br>
 
-## ⬇️ Download
+## 📲 Download
 
 ```bash
 
