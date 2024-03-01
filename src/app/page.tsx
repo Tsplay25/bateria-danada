@@ -168,10 +168,10 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center py-16">
           <div className="flex flex-col items-center justify-center">
-            <h2 className="font-sugo text-center text-5xl lg:text-7xl">
+            <h2 className="bg-purple-regular w-screen pt-16 font-sugo text-center text-5xl lg:text-7xl">
               Vertentes Musicais
             </h2>
-            <span className="font-sugo text-3xl text-center">
+            <span className="bg-purple-regular w-screen pb-4 font-sugo text-3xl text-center">
               Conheça nossos ritmos!
             </span>
           </div>
