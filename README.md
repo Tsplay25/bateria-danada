@@ -11,6 +11,8 @@
 
 </p>
 
+<br>
+
 ![Capa do projeto](readme-cover.png)
 
 <br>
