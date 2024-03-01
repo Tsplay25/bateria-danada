@@ -303,35 +303,92 @@ export default function Home() {
               />
             </div>
           </div>
-        <img className="rotate-180 w-full" src="/img/contact/blue-down-waves.svg" alt="" />
+          <img
+            className="rotate-180 w-full"
+            src="/img/contact/blue-down-waves.svg"
+            alt=""
+          />
         </div>
       </section>
 
       {/* Photos */}
-      <section className="bg-blue-regular flex flex-col items-center px-5 md:px-28 py-5 gap-9">
-        <h2 className="font-sugo text-center text-5xl lg:text-7xl text-white">Seção de Fotos</h2>
+      <section
+        className="bg-blue-regular flex flex-col items-center px-5 md:px-28 py-5 gap-9"
+        id="photos"
+      >
+        <h2 className="font-sugo text-center text-5xl lg:text-7xl text-white">
+          Seção de Fotos
+        </h2>
         <div className="flex flex-col mdlg:flex-row mdlg:gap-14">
           {/* Mural 1 */}
           <div className="bg-white w-fit rounded-t-[20px] mdlg:rounded-[20px] ">
-              <div className="grid grid-rows-3 grid-cols-3 items-center pb-2 pt-4 px-4 mdlg:p-4 gap-x-2 gap-y-1 h-full">
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3" src="/img/events-social/carousel-images/dnd-de-lata/1.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2" src="/img/events-social/carousel-images/dnd-de-lata/2.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover" src="/img/events-social/carousel-images/dnd-de-lata/3.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3" src="/img/events-social/carousel-images/dnd-de-lata/4.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2" src="/img/events-social/carousel-images/dnd-de-lata/5.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover" src="/img/events-social/carousel-images/dnd-de-lata/1.jpg" alt="" />
-              </div>
+            <div className="grid grid-rows-3 grid-cols-3 items-center pb-2 pt-4 px-4 mdlg:p-4 gap-x-2 gap-y-1 h-full">
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3"
+                src="/img/events-social/carousel-images/dnd-de-lata/1.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2"
+                src="/img/events-social/carousel-images/dnd-de-lata/2.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover"
+                src="/img/events-social/carousel-images/dnd-de-lata/3.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3"
+                src="/img/events-social/carousel-images/dnd-de-lata/4.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2"
+                src="/img/events-social/carousel-images/dnd-de-lata/5.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover"
+                src="/img/events-social/carousel-images/dnd-de-lata/1.jpg"
+                alt=""
+              />
+            </div>
           </div>
           {/* Mural 2 */}
           <div className="bg-white w-fit rounded-b-[20px] mdlg:rounded-[20px] ">
-              <div className="grid grid-rows-3 grid-cols-3 items-center pb-4 pt-2 px-4 mdlg:p-4 gap-x-2 gap-y-1">
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3" src="/img/events-social/carousel-images/dnd-de-lata/1.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2" src="/img/events-social/carousel-images/dnd-de-lata/2.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover" src="/img/events-social/carousel-images/dnd-de-lata/3.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3" src="/img/events-social/carousel-images/dnd-de-lata/4.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2" src="/img/events-social/carousel-images/dnd-de-lata/5.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[150px] w-full object-cover" src="/img/events-social/carousel-images/dnd-de-lata/1.jpg" alt="" />
-              </div>
+            <div className="grid grid-rows-3 grid-cols-3 items-center pb-4 pt-2 px-4 mdlg:p-4 gap-x-2 gap-y-1">
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3"
+                src="/img/events-social/carousel-images/dnd-de-lata/1.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2"
+                src="/img/events-social/carousel-images/dnd-de-lata/2.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover"
+                src="/img/events-social/carousel-images/dnd-de-lata/3.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-3"
+                src="/img/events-social/carousel-images/dnd-de-lata/4.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover col-span-2"
+                src="/img/events-social/carousel-images/dnd-de-lata/5.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[150px] w-full object-cover"
+                src="/img/events-social/carousel-images/dnd-de-lata/1.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
