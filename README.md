@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-aprendizado">Download</a>
+  <a href="#-download">Download</a>
 
 </p>
 
@@ -32,7 +32,7 @@ Este projeto foi desenvolvido com o objetivo de divulgar e aumentar o reconhecim
 
 <br>
 
-![Gif da página do projeto](./readme-cover.gif)
+![Gif da página do projeto](./readme-preview.gif)
 
 <br>
 
