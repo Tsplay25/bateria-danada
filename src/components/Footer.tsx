@@ -1,3 +1,5 @@
+"use client";
+
 export default function Footer() {
   return (
     <div className="bg-blue-dark w-full px-5 text-white font-sugo">

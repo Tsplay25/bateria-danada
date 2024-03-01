@@ -322,25 +322,73 @@ export default function Home() {
         <div className="flex flex-col mdlg:flex-row mdlg:gap-14">
           {/* Mural 1 */}
           <div className="bg-white w-fit rounded-t-[20px] mdlg:rounded-[20px] ">
-              <div className="grid grid-rows-3 grid-cols-3 items-center pb-2 pt-4 px-4 mdlg:p-4 gap-x-2 gap-y-1 h-full">
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3" src="/img/photos/p1.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2" src="/img/photos/p2.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover" src="/img/photos/p3.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3" src="/img/photos/p4.jpeg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2" src="/img/photos/p5.jpeg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover" src="/img/photos/p6.jpg" alt="" />
-              </div>
+            <div className="grid grid-rows-3 grid-cols-3 items-center pb-2 pt-4 px-4 mdlg:p-4 gap-x-2 gap-y-1 h-full">
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3"
+                src="/img/photos/p1.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2"
+                src="/img/photos/p2.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover"
+                src="/img/photos/p3.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3"
+                src="/img/photos/p4.jpeg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2"
+                src="/img/photos/p5.jpeg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover"
+                src="/img/photos/p6.jpg"
+                alt=""
+              />
+            </div>
           </div>
           {/* Mural 2 */}
           <div className="bg-white w-fit rounded-b-[20px] mdlg:rounded-[20px] ">
-              <div className="grid grid-rows-3 grid-cols-3 items-center pb-4 pt-2 px-4 mdlg:p-4 gap-x-2 gap-y-1">
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3" src="/img/photos/p7.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2" src="/img/photos/p8.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover" src="/img/photos/p9.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3" src="/img/photos/p10.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2" src="/img/photos/p11.jpg" alt="" />
-                <img className=" rounded-[20px] h-full max-h-[160px] w-full object-cover" src="/img/photos/p12.jpg" alt="" />
-              </div>
+            <div className="grid grid-rows-3 grid-cols-3 items-center pb-4 pt-2 px-4 mdlg:p-4 gap-x-2 gap-y-1">
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3"
+                src="/img/photos/p7.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2"
+                src="/img/photos/p8.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover"
+                src="/img/photos/p9.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-3"
+                src="/img/photos/p10.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover col-span-2"
+                src="/img/photos/p11.jpg"
+                alt=""
+              />
+              <img
+                className=" rounded-[20px] h-full max-h-[160px] w-full object-cover"
+                src="/img/photos/p12.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
