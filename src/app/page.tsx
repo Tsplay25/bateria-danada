@@ -29,8 +29,13 @@ export default function Home() {
       const response = await axios.post(
         'http://localhost:5173/create',
         data
-    );
-
+      )
+      methods.reset({
+        name: "",
+        email: "",
+        message: ""
+      })
+      setPhone('')
     } catch (error) {
       console.error('Erro ao enviar os dados:', error);
     }
@@ -191,7 +196,13 @@ export default function Home() {
                   <div className="flex flex-col z-30">
                       <label className="text-blue-dark md:text-[28px]" htmlFor="email">Email:</label>
                       <input
-                        {...methods.register("email", {required: "Você precisa digitar seu email"})} 
+                        {...methods.register("email",
+                          {required: "Você precisa digitar seu email",
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: "Endereço de email inválido"
+                          }
+                        })} 
                         className="text-[14px] font-roboto font-medium bg-gray rounded-[20px] px-3 py-2" 
                         type="text" 
                         id="email" 
@@ -216,7 +227,10 @@ export default function Home() {
                       />
                   </div>
     
-                  <button type="submit" className="self-center rounded-lg text-white bg-blue-dark w-3/6 my-4 py-2.5 text-[24px] hover:bg-purple-light hover:scale-105 transition-all">
+                  <button 
+                    type="submit" 
+                    className="self-center rounded-lg text-white bg-blue-dark w-3/6 my-4 py-2.5 text-[24px] hover:bg-purple-light hover:scale-105 transition-all"
+                  >
                     Enviar
                   </button>
                 </form>
