@@ -56,15 +56,15 @@ export default function Home() {
       >
         <div className="flex items-center justify-center max-w-7xl">
           <div className="flex flex-col items-start gap-9 z-10 p-9 absolute md:static">
-            <h1 className="text-blue-light font-edo text-5xl w-full">
+            <h1 className="text-blue-dark font-edo text-6xl w-full">
               Bateria Danada Unifei
             </h1>
 
-            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl">
+            <p className="font-sugo leading-5 max-w-96 text-lg xl:text-2xl">
               A Bateria Danada Unifei carrega no peito o nome da Universidade
               Federal de Itajubá.
             </p>
-            <p className="font-sugo leading-5 max-w-96 text-lg md:text-2xl">
+            <p className="font-sugo leading-5 max-w-96 text-lg xl:text-2xl">
               Há décadas tem encantado e animado a comunidade universitária,
               participando de eventos, torneios, shows e serviços para a
               comunidade de Itajubá. Representando o Sul de Minas Gerais
@@ -168,10 +168,10 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center py-16">
           <div className="flex flex-col items-center justify-center">
-            <h2 className="font-sugo text-center text-5xl lg:text-7xl">
+            <h2 className="bg-purple-regular w-screen pt-16 font-sugo text-center text-5xl lg:text-7xl">
               Vertentes Musicais
             </h2>
-            <span className="font-sugo text-3xl text-center">
+            <span className="bg-purple-regular w-screen pb-4 font-sugo text-3xl text-center">
               Conheça nossos ritmos!
             </span>
           </div>
