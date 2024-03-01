@@ -124,51 +124,53 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="flex flex-wrap mdlg:flex-nowrap md:gap-8 px-2">
-            {/* School and Games */}
-            <div className="flex flex-col items-center justify-center bg-strand-ink bg-contain bg-center bg-no-repeat w-full h-[300px] sm:h-[400px] max-h-[600px]">
-              <div className="flex flex-col items-center justify-center gap-3 max-w-72 md:max-w-96">
-                <h3 className="font-sugo text-center text-2xl lg:text-3xl sm:-mt-10">
-                  Escolinha e Jogos
-                </h3>
-                <div className="max-w-72 relative">
-                  <picture>
-                    <img
-                      src="/img/strands/school.jpg"
-                      className="w-full rounded-xl"
-                      alt="Foto dos ritmistas da Bateria Danada Unifei tocando a vertente de escolinha em uma festa universitária."
-                    />
-                  </picture>
-                  <div className="absolute bottom-0 flex items-center justify-center w-full bg-gradient-to-b from-white/0 to-blue-regular/60 rounded-b-xl">
-                    <p className="font-sugo leading-4 text-center text-sm mdlg:text-xl mdlg:leading-4  p-4">
-                      Introdutória para o ensino de samba a novos ritmistas,
-                      visando a apresentação em eventos universitários e torcida
-                      em jogos
-                    </p>
+          <div className="flex flex-col flex-wrap mdlg:flex-nowrap md:gap-8 px-2">
+            <div className="flex flex-wrap mdlg:flex-nowrap items-center justify-center md:gap-8 mdlg:w-[760px] lg:w-[1024px]">
+              {/* School and Games */}
+              <div className="flex flex-col items-center justify-center bg-strand-ink bg-contain bg-center bg-no-repeat w-full h-[300px] sm:h-[400px] max-h-[600px]">
+                <div className="flex flex-col items-center justify-center gap-3 max-w-72 md:max-w-96">
+                  <h3 className="font-sugo text-center text-2xl lg:text-3xl sm:-mt-10">
+                    Escolinha e Jogos
+                  </h3>
+                  <div className="max-w-72 relative">
+                    <picture>
+                      <img
+                        src="/img/strands/school.jpg"
+                        className="w-full rounded-xl"
+                        alt="Foto dos ritmistas da Bateria Danada Unifei tocando a vertente de escolinha em uma festa universitária."
+                      />
+                    </picture>
+                    <div className="absolute bottom-0 flex items-center justify-center w-full bg-gradient-to-b from-white/0 to-blue-regular/60 rounded-b-xl">
+                      <p className="font-sugo leading-4 text-center text-sm mdlg:text-xl mdlg:leading-4  p-4">
+                        Introdutória para o ensino de samba a novos ritmistas,
+                        visando a apresentação em eventos universitários e
+                        torcida em jogos
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Competition */}
-            <div className="flex flex-col items-center justify-center bg-strand-ink bg-contain bg-center bg-no-repeat w-full h-[300px] sm:h-[400px] max-h-[600px]">
-              <div className="flex flex-col items-center justify-center gap-3 max-w-72 md:max-w-96">
-                <h3 className="font-sugo text-center text-2xl lg:text-3xl sm:-mt-10">
-                  Competição
-                </h3>
-                <div className="max-w-72 relative">
-                  <picture>
-                    <img
-                      src="/img/strands/competition.jpg"
-                      className="max-h-44 w-full rounded-xl"
-                      alt="Foto dos ritmistas da Bateria Danada Unifei tocando a vertente de escolinha em uma festa universitária."
-                    />
-                  </picture>
-                  <div className="absolute bottom-0 flex items-center justify-center w-full bg-gradient-to-b from-white/0 to-blue-regular/60 rounded-b-xl">
-                    <p className="font-sugo leading-4 text-center text-sm mdlg:text-xl mdlg:leading-4  p-4">
-                      Vertente com viradas e desenhos complexos compostas para
-                      competições em torneio de baterias universitárias
-                    </p>
+              {/* Competition */}
+              <div className="flex flex-col items-center justify-center bg-strand-ink bg-contain bg-center bg-no-repeat w-full h-[300px] sm:h-[400px] max-h-[600px]">
+                <div className="flex flex-col items-center justify-center gap-3 max-w-72 md:max-w-96">
+                  <h3 className="font-sugo text-center text-2xl lg:text-3xl sm:-mt-10">
+                    Competição
+                  </h3>
+                  <div className="max-w-72 relative">
+                    <picture>
+                      <img
+                        src="/img/strands/competition.jpg"
+                        className="max-h-44 w-full rounded-xl"
+                        alt="Foto dos ritmistas da Bateria Danada Unifei tocando a vertente de escolinha em uma festa universitária."
+                      />
+                    </picture>
+                    <div className="absolute bottom-0 flex items-center justify-center w-full bg-gradient-to-b from-white/0 to-blue-regular/60 rounded-b-xl">
+                      <p className="font-sugo leading-4 text-center text-sm mdlg:text-xl mdlg:leading-4  p-4">
+                        Vertente com viradas e desenhos complexos compostas para
+                        competições em torneio de baterias universitárias
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
