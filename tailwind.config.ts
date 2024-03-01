@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      sm: "320px",
+      smlg: "375px",
+      smxl: "425px",
       md: "480px",
       mdlg: "760px",
       lg: "1024px",
@@ -38,6 +41,9 @@ const config: Config = {
         "sambanada-logo": "url('/img/events-social/sambanada-logo.png')",
         "dnd-de-lata-logo": "url('/img/events-social/dnd-de-lata-logo.png')",
         "drums": "url(/img/contact/bg-drums.png)",
+        "sobre-img": "url('/img/about/bg-about-img.png')",
+        "strand-rabbits": "url('/img/strands/bg-rabbits.png')",
+        "strand-ink": "url('/img/strands/strand-ink.png')",
       },
       fontFamily: {
         slowdex: ["Slowdex"],
