@@ -51,6 +51,7 @@ export default function Footer() {
               <a
                 className="flex gap-2 items-center"
                 href="https://www.instagram.com/bateriadanadaunifei/"
+                target="_blank"
               >
                 <span>
                   <span className="font-mono">@</span>bateriadanadaunifei
@@ -64,6 +65,7 @@ export default function Footer() {
               <a
                 className="flex gap-2 items-center"
                 href="https://www.facebook.com/bateriadanada.unifei/"
+                target="_blank"
               >
                 <span>Bateria Danada Unifei</span>
                 <img
