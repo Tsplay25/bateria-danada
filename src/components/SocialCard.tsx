@@ -28,7 +28,6 @@ const SocialCard = ({ title, carouselImgs, content }: IProps) => {
         </h3>
 
         {/* Carousel */}
-
         <motion.div
           ref={carousel}
           className="max-w-72 cursor-grab overflow-hidden"
