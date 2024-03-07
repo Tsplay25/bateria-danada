@@ -9,7 +9,6 @@ import {
   SubmitHandler,
   SubmitErrorHandler,
 } from "react-hook-form";
-import axios from "axios";
 
 type FormData = {
   id: number;
