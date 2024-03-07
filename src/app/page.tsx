@@ -31,7 +31,13 @@ export default function Home() {
 
   const onSubmit: SubmitHandler<FormData> = async (data: FormData) => {
     try {
-      const response = await axios.post("http://localhost:5173/create", data);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-type" : "application/json" }
+      }).then(res => res.json())
+      console.log(response);
+      
       methods.reset({
         name: "",
         email: "",
